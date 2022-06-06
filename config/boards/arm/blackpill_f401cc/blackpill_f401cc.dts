@@ -50,8 +50,8 @@
     clocks = <&pll>;
     clock-frequency = <DT_FREQ_M(84)>;
     ahb-prescaler = <1>;
-    apb1-prescaler = <2>;
-    apb2-prescaler = <1>;
+    apb1-prescaler = <8>;
+    apb2-prescaler = <4>;
 };
 
 &rtc {
@@ -61,6 +61,7 @@
 &usbotg_fs {
     pinctrl-0 = <&usb_otg_fs_dm_pa11 &usb_otg_fs_dp_pa12>;
     pinctrl-names = "default";
+    maximum-speed = "low-speed";
     status = "okay";
     cdc_acm_uart0: cdc_acm_uart0 {
         compatible = "zephyr,cdc-acm-uart";
