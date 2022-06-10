@@ -42,7 +42,7 @@
             bindings = <
 &kp N1       &kp N2    &kp N3    &kp N4       &kp N5   &kp N6    &kp N7   &kp N8    &kp N9    &kp N0
 &kp ESC      &kp SQT   &kp DOWN  &kp BSPC     &kp INS &kp UP &kp DEL  &kp END   &kp HOME  &kp TAB
-&kp GRAVE    &kp PG_UP &kp RBKT  &kp RET      &kp LEFT  &kp RIGHT    &kp LBKT &kp MINUS &kp EQUAL &kp BSLH
+&kp GRAVE    &kp PG_UP &kp LBKT  &kp RET      &kp LEFT  &kp RIGHT    &kp RBKT &kp MINUS &kp EQUAL &kp BSLH
 &sk LALT     &sl 2     &sk LWIN  &kp UNDERSCORE
             >;
         };
