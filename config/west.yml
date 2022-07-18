@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: zmk
       remote: nguyendown
-      revision: 405192e
+      revision: round-robin-matrix
       import: app/west.yml
   self:
     path: config
