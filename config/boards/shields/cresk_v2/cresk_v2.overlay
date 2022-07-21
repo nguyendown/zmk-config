@@ -44,19 +44,12 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(3,4) RC(8,4) RC(9,3) RC(9,2) RC(9,1) RC(9,0)
         compatible = "zmk,kscan-gpio-round-robin-matrix";
         label = "KSCAN_ROUND_ROBIN_MATRIX_1";
 
-        output-gpios
-            = <&gpioa 5  GPIO_ACTIVE_HIGH>
-            , <&gpioa 4  GPIO_ACTIVE_HIGH>
-            , <&gpioa 3  GPIO_ACTIVE_HIGH>
-            , <&gpioa 2  GPIO_ACTIVE_HIGH>
-            , <&gpioa 1  GPIO_ACTIVE_HIGH>
-            ;
-        input-gpios
-            = <&gpioa 5  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpioa 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpioa 3  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpioa 2  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpioa 1  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        gpios
+            = <&gpioa 5 0>
+            , <&gpioa 4 0>
+            , <&gpioa 3 0>
+            , <&gpioa 2 0>
+            , <&gpioa 1 0>
             ;
     };
 
@@ -64,19 +57,12 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(3,4) RC(8,4) RC(9,3) RC(9,2) RC(9,1) RC(9,0)
         compatible = "zmk,kscan-gpio-round-robin-matrix";
         label = "KSCAN_ROUND_ROBIN_MATRIX_2";
 
-        output-gpios
-            = <&gpiob 4  GPIO_ACTIVE_HIGH>
-            , <&gpiob 3  GPIO_ACTIVE_HIGH>
-            , <&gpioa 15 GPIO_ACTIVE_HIGH>
-            , <&gpioa 0  GPIO_ACTIVE_HIGH>
-            , <&gpiob 5  GPIO_ACTIVE_HIGH>
-            ;
-        input-gpios
-            = <&gpiob 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpiob 3  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpioa 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpioa 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpiob 5  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        gpios
+            = <&gpiob 4  0
+            , <&gpiob 3  0>
+            , <&gpioa 15 0>
+            , <&gpioa 0  0>
+            , <&gpiob 5  0>
             ;
     };
 
