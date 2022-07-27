@@ -22,7 +22,7 @@
 RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(3,0) RC(7,0) RC(4,3) RC(4,2) RC(4,1) RC(4,0)
 RC(1,0) RC(1,1) RC(1,2) RC(1,3) RC(3,1) RC(7,1) RC(5,3) RC(5,2) RC(5,1) RC(5,0)
 RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(3,2) RC(7,2) RC(6,3) RC(6,2) RC(6,1) RC(6,0)
-                RC(0,5) RC(0,4) RC(3,3) RC(7,3)
+                        RC(0,4) RC(3,3) RC(7,3) RC(0,5)
         >;
     };
 
@@ -44,9 +44,10 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(3,2) RC(7,2) RC(6,3) RC(6,2) RC(6,1) RC(6,0)
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN_MATRIX";
         diode-direction = "col2row";
+        poll-period-ms = <1>;
 
         col-gpios
-            = <&gpiob 4 GPIO_ACTIVE_HIGH>
+            = <&gpiob 4  GPIO_ACTIVE_HIGH>
             , <&gpiob 5  GPIO_ACTIVE_HIGH>
             , <&gpiob 6  GPIO_ACTIVE_HIGH>
             , <&gpiob 7  GPIO_ACTIVE_HIGH>
@@ -66,10 +67,11 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(3,2) RC(7,2) RC(6,3) RC(6,2) RC(6,1) RC(6,0)
     kscan_direct: kscan_direct {
         compatible = "zmk,kscan-gpio-direct";
         label = "KSCAN_DIRECT";
+        poll-period-ms = <1>;
 
         input-gpios
             = <&gpioa 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&gpioa 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpiob 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             ;
     };
 };
