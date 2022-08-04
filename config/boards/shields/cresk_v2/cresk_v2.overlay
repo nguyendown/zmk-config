@@ -65,18 +65,18 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(3,4) RC(8,4) RC(9,3) RC(9,2) RC(9,1) RC(9,0)
         label = "KSCAN_ROUND_ROBIN_MATRIX_2";
 
         output-gpios
-            = <&gpiob 4  GPIO_ACTIVE_HIGH>
-            , <&gpiob 3  GPIO_ACTIVE_HIGH>
-            , <&gpioa 15 GPIO_ACTIVE_HIGH>
+            = <&gpiob 5  GPIO_ACTIVE_HIGH>
             , <&gpioa 0  GPIO_ACTIVE_HIGH>
-            , <&gpiob 5  GPIO_ACTIVE_HIGH>
+            , <&gpioa 15 GPIO_ACTIVE_HIGH>
+            , <&gpiob 3  GPIO_ACTIVE_HIGH>
+            , <&gpiob 4  GPIO_ACTIVE_HIGH>
             ;
         input-gpios
-            = <&gpiob 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpiob 3  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpioa 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            = <&gpiob 5  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&gpioa 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpiob 5  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpioa 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpiob 3  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpiob 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
 
