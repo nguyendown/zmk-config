@@ -85,7 +85,7 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(3,4) RC(8,4) RC(9,3) RC(9,2) RC(9,1) RC(9,0)
         label = "LEFT_ENCODER";
         a-gpios = <&gpioa 7  (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpiob 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        resolution = <4>;
+        resolution = <3>;
         status = "okay";
     };
 
@@ -94,7 +94,7 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(3,4) RC(8,4) RC(9,3) RC(9,2) RC(9,1) RC(9,0)
         label = "RIGHT_ENCODER";
         a-gpios = <&gpioa 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpioa 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        resolution = <4>;
+        resolution = <3>;
         status = "okay";
     };
 
