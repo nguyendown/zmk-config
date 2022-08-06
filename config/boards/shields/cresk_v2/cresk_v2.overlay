@@ -117,8 +117,6 @@ arduino_i2c: &i2c1 {
         page-offset = <0>;
         display-offset = <0>;
         multiplex-ratio = <31>;
-        segment-remap;
-        com-invdir;
         com-sequential;
         prechargep = <0x22>;
     };
