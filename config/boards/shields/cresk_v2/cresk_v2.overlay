@@ -83,8 +83,8 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(3,4) RC(8,4) RC(9,3) RC(9,2) RC(9,1) RC(9,0)
     left_encoder: encoder_left {
         compatible = "alps,ec11";
         label = "LEFT_ENCODER";
-        a-gpios = <&gpioa 7  (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&gpiob 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        a-gpios = <&gpiob 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpioa 7  (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <3>;
         status = "okay";
     };
