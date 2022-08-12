@@ -17,16 +17,6 @@
 };
 
 / {
-    behaviors {
-        td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&sk LSHIFT>, <&caps_word>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -35,7 +25,7 @@
 &kp F &kp L &kp H &kp V &kp Z &kp C &kp W &kp U &kp O &kp Y
 &kp S &kp R &kp N &kp T &kp K &kp P &kp D &kp E &kp A &kp I
 &kp X &kp J &kp B &kp M &kp Q &kp SQT &kp G &kp COMMA &kp DOT &kp FSLH
-&sl 1 &kp SPACE &sk LCTRL &td0
+&sl 1 &kp SPACE &sk LCTRL &sk LSHIFT
             >;
         }
 ;
