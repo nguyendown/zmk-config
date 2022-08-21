@@ -25,7 +25,7 @@
 &kp F &kp L &kp H &kp V &kp Z &kp C &kp W &kp U &kp O &kp Y
 &kp S &kp R &kp N &kp T &kp K &kp P &kp D &kp E &kp A &kp I
 &kp X &kp J &kp B &kp M &kp Q &kp SQT &kp G &kp COMMA &kp DOT &kp FSLH
-&sl 1 &kp SPACE &sk LCTRL &sk LSHIFT
+&sl 1 &kp SPACE &sk LSHIFT &sk LCTRL
             >;
         }
 ;
@@ -34,7 +34,7 @@
 &kp N1       &kp N2    &kp N3    &kp N4       &kp N5   &kp N6    &kp N7   &kp N8    &kp N9    &kp N0
 &kp ESC      &kp SEMI   &kp DOWN  &kp BSPC     &kp INS &kp UP &kp DEL  &kp END   &kp HOME  &kp TAB
 &kp GRAVE    &kp PG_UP &kp LBKT  &kp RET      &kp LEFT  &kp RIGHT    &kp RBKT &kp MINUS &kp EQUAL &kp BSLH
-&sl 2      &kp UNDERSCORE &sk LWIN &sk LALT
+&sl 2      &trans &sk LALT &sk LWIN
             >;
         };
 
@@ -43,7 +43,7 @@
 &kp F1       &kp F2    &kp F3    &kp F4       &kp F5   &kp F6    &kp F7   &kp F8    &kp F9    &kp F10
 &kp F11      &kp F12    &none   &kp LC(BSPC) &none    &none     &none    &none     &none     &none
 &kp TILDE    &kp PG_DN &none     &kp C_MUTE   &none    &none     &none    &none     &none     &none
-&none     &none     &none &sk LS(LALT)
+&none     &none     &sk LS(LALT) &sk LC(LWIN)
             >;
         };
     };
