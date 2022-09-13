@@ -14,4 +14,4 @@
 ---
 include:
   - board: blackpill_f401cc
-    shield: cresk_v2
+    shield: cresk_100
