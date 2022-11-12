@@ -2,4 +2,4 @@
 # SPDX-License-Identifier: MIT
 
 config SHIELD_CRESK_V2
-    def_bool $(shields_list_contains,cresk_v2)
+	def_bool $(shields_list_contains,cresk_v2)
