@@ -1,6 +1,0 @@
-# Copyright (c) 2022 The ZMK Contributors
-# SPDX-License-Identifier: MIT
-
-config BOARD_BLACKPILL_F401CC
-	bool "BlackPill F401CC"
-	depends on SOC_STM32F401XC
