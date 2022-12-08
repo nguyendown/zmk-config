@@ -1,7 +1,7 @@
 # Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_CRESK_100
+if SHIELD_CRESK_100 || SHIELD_CRESK_V2
 
 config ZMK_KEYBOARD_NAME
 	default "cresk_100"
@@ -49,4 +49,4 @@ config BUILD_OUTPUT_UF2_USE_FLASH_OFFSET
 
 endif # BUILD_OUTPUT_UF2
 
-endif # SHIELD_CRESK_100
+endif # SHIELD_CRESK_100 || SHIELD_CRESK_V2

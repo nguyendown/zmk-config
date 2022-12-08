@@ -1,6 +1,6 @@
 file_format: "1"
 id: cresk_v2
-name: cresk v2
+name: cresk_v2
 type: shield
 url: https://github.com/nguyendown/cresk
 requires: [blackpill]
