@@ -8,7 +8,7 @@
 
 / {
 	kscan_matrix_1: kscan_matrix_1 {
-		compatible = "zmk,kscan-gpio-round-robin-matrix";
+		compatible = "zmk,kscan-gpio-charlieplex";
 
 		output-gpios
 			= <&gpioa 5  GPIO_ACTIVE_HIGH>
@@ -27,7 +27,7 @@
 	};
 
 	kscan_matrix_2: kscan_matrix_2 {
-		compatible = "zmk,kscan-gpio-round-robin-matrix";
+		compatible = "zmk,kscan-gpio-charlieplex";
 
 		output-gpios
 			= <&gpiob 5  GPIO_ACTIVE_HIGH>
