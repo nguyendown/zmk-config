@@ -13,5 +13,7 @@
 #
 ---
 include:
-  - board: blackpill_f401cc
-    shield: cresk_100
+  - board: nrfmicro_13_52833
+    shield: cresk_choc_left
+  - board: nrfmicro_13_52833
+    shield: cresk_choc_right

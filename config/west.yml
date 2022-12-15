@@ -4,10 +4,12 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: nguyendown
       url-base: https://github.com/nguyendown
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
   projects:
     - name: zmk
-      remote: nguyendown
-      revision: cresk
+      remote: petejohanson
+      revision: zephyr/3.1-upgrade
       import: app/west.yml
   self:
     path: config
