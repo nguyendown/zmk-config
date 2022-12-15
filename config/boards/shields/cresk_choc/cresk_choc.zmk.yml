@@ -1,0 +1,11 @@
+file_format: "1"
+id: cresk_choc
+name: cresk_choc
+type: shield
+url: https://github.com/nguyendown/cresk
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - cresk_choc_left
+  - cresk_choc_right

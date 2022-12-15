@@ -1,0 +1,19 @@
+# Copyright (c) 2022 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_CRESK_CHOC_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "cresk_choc"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_CRESK_CHOC_LEFT
+
+if SHIELD_CRESK_CHOC_LEFT || SHIELD_CRESK_CHOC_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_CRESK_CHOC_LEFT || SHIELD_CRESK_CHOC_RIGHT
